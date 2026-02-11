@@ -1,0 +1,48 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.font{
+    font-size: 20px;
+    /* font-weight: 600; */
+    font-style: italic;
+    color: #8a8a8a;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    word-spacing: 2px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif */
+    /* font-family: "Poppins", sans-serif; */
+    /* width: 200px;
+    height: 200px;
+    background: #d1d1d1;
+    overflow: scroll;
+    padding: 20px; */
+
+    /* text-transform: uppercase; */
+    
+    /* text-decoration: underline red 3px dotted; */
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;  
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+li:last-child{
+    padding-bottom: 0;
+}
+
+li:first-child{
+    color: blueviolet;
+}
+
+li:nth-child(odd){
+    color: red;
+}

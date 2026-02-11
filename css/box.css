@@ -1,0 +1,33 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+.div1, .div2, .div3{
+    padding: 20px 35px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+
+    border: 3px solid black;
+
+    /* border-left: 3px solid red;
+    border-bottom: 4px solid green;
+    border-top: 5px solid yellow;
+    border-right: 10px solid orange; */
+
+    margin: 10px;
+    border-radius: 7px;
+    /* padding-left: 25px;
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-bottom: 30px; */
+}
+
+.div2{
+    background-color: #f53c3c;
+}
+
+.div3{
+    background-color: #48f948;
+}

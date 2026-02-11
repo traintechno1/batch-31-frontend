@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This web page is for learning HTML Form">
+    <meta name="author" content="Technogeeks">
+    <link rel="icon" href="assets/images/form-faviocon.png" type="image/png"/>
+    <style></style>
+    <script></script>
+    <title>Form Example</title>
+</head>
+<body>
+    <h2>Form Example:</h2>
+    <form>
+        <label for="first_name">First Name <span style="color: red;">*</span></label>
+        <input 
+            placeholder="First Name" 
+            name="first_name"
+            type="text"
+            required
+            pattern="^[A-Z]{1}[a-z]{1,}$"
+            value="Yash"
+            title="Only Letters allowed, minimum 2 characters, first character should be capital"
+            minlength="2"
+            maxlength="30"
+            id="first_name"/>
+            <!-- readonly -->
+
+        <br />
+        <br />
+
+        <label for="last_name">Last Name <span style="color: red;">*</span></label>
+        <input 
+            placeholder="Last Name" 
+            name="last_name"
+            type="text"
+            id="last_name"/>
+
+        <br />
+        <br />
+
+        <label for="mobile">Mobile</label>
+        <input 
+            type="text" 
+            id="mobile"
+            pattern="^[6789]{1}[0-9]{9}$"
+            title="Please provide valid mobile number"
+            placeholder="mobile number"
+            name="mobile" />
+
+        <br />
+        <br />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" id="male"/> <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"/> <label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other"/> <label for="other">Other</label>
+
+        <br />
+        <br />
+
+        <label>Sports:</label>
+        <input type="checkbox" name="sport" id="cricket" value="cricket" /><label for="cricket">Cricket</label>
+        <input type="checkbox" name="sport" id="basketball" value="basketball" /><label for="basketball">Basketball</label>
+        <input type="checkbox" name="sport" id="hockey" value="hockey" /><label for="hockey">Hockey</label>
+        <input type="checkbox" name="sport" id="badminton" value="badminton" /><label for="badminton">Badminton</label>
+        <br />
+        <br />
+
+        <label>City:</label>
+        <select name="city">
+            <option value="">Please Select</option>
+            <option>Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option>Nagpur</option>
+            <option>Thane</option>
+            <option>Nashik</option>
+            <option>Amravati</option>
+            <option>Nanded</option>
+            <option>Dhule</option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <label>Date of birth:</label>
+        <input type="date" name="dob" />
+
+        <br/>
+        <br/>
+
+        <label>Email</label>
+        <input type="email" placeholder="Email" name="email"/>
+
+        <br/>
+        <br/>
+
+        <label>Select Range</label>
+        <input name="range" type="range" min="10" max="100" />
+        
+        <br/>
+        <br/>
+
+        <label>Select Color</label>
+        <input type="color" name="color" />
+        <br/>
+        <br/>
+        
+        <label>Select File:</label>
+        <input type="file" name="file" />
+        
+        <br/>
+        <br/>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
