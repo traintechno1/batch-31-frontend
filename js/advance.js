@@ -2,22 +2,40 @@
 // Hoisting
 // console.log(a);  // Temporal dead zone
 
-let a = 500;
+// let a = 500;
 
-console.log(a);
+// console.log(a);
 
 // undefined(); // Type Error
 
 // add(); // Reference Error
 
-var add = () => {
-    console.log(10 + 20);
+// var add = () => {
+//     console.log(10 + 20);
+// }
+
+// add();
+
+// console.log(a);
+
+function outer(){
+    let num = 400;
+    function inner(){
+        console.log(num);
+    }
+    // inner();
+    return inner;
 }
 
-add();
+let test = outer();
+test();
+// console.log(num);
 
-console.log(a);
 
+// console.log("Test");
+
+// outer();
+// outer();
 
 
 
