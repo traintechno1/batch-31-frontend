@@ -39,10 +39,6 @@ test();
 
 
 
-
-
-
-
 // var a = 1000;
 // var a = 2000;
 
@@ -57,3 +53,6 @@ test();
 // ex();
 // console.log(a); // ?200
 
+document.getElementById("para").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore aperiam mollitia explicabo quaerat est impedit tenetur, natus molestiae veritatis inventore amet ipsa? Delectus vero minima debitis sint quam. Iusto!";
+document.getElementById("para").style.backgroundColor = "#70f3d9";
+document.getElementById("para").innerText = ""
